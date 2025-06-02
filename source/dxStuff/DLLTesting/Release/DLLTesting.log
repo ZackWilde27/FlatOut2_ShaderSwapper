@@ -1,0 +1,13 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(524,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  pch.cpp
+  dllmain.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+D:\C++\DLLTesting\DLLTesting\dllmain.cpp(120,19): warning C4101: 'bytesWritten': unreferenced local variable
+  (compiling source file '/dllmain.cpp')
+  
+     Creating library C:\GOG Games\FlatOut 2\dxHook.lib and object C:\GOG Games\FlatOut 2\dxHook.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DLLTesting.vcxproj -> C:\GOG Games\FlatOut 2\dxHook.dll

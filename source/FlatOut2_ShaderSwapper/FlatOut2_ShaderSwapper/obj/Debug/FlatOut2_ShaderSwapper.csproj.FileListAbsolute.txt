@@ -1,0 +1,15 @@
+C:\Users\zackw\Desktop\Reloaded-II\Mods\FlatOut2_ShaderSwapper\Preview.png
+C:\Users\zackw\Desktop\Reloaded-II\Mods\FlatOut2_ShaderSwapper\ModConfig.json
+C:\Users\zackw\Desktop\Reloaded-II\Mods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper.deps.json
+C:\Users\zackw\Desktop\Reloaded-II\Mods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper.dll
+C:\Users\zackw\Desktop\Reloaded-II\Mods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper.pdb
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.csproj.AssemblyReference.cache
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.AssemblyInfoInputs.cache
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.AssemblyInfo.cs
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.csproj.CoreCompileInputs.cache
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2.05E22DCB.Up2Date
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.dll
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\refint\FlatOut2_ShaderSwapper.dll
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\FlatOut2_ShaderSwapper.pdb
+D:\reloadedmods\FlatOut2_ShaderSwapper\FlatOut2_ShaderSwapper\obj\Debug\ref\FlatOut2_ShaderSwapper.dll

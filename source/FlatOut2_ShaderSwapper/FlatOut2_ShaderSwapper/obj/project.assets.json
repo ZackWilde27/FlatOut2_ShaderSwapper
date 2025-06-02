@@ -1,0 +1,315 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Reloaded.Hooks.Definitions/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Reloaded.Memory/9.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Reloaded.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Reloaded.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Reloaded.Mod.Interfaces/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Reloaded.Mod.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Reloaded.SharedLib.Hooks/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.11.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FlatOut2.SDK/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.11.0",
+          "Reloaded.Memory": "9.3.2"
+        },
+        "compile": {
+          "bin/placeholder/FlatOut2.SDK.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlatOut2.SDK.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/8.0.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Reloaded.Hooks.Definitions/1.11.0": {
+      "sha512": "/z0AwcCvVTQHlQ9SMMMBqKEIrm5t/yBFPylySW2Rnr7uRGV9jGfoACFe79KZKF976dhtkyy2xl0HIXz5hRUkng==",
+      "type": "package",
+      "path": "reloaded.hooks.definitions/1.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net5.0/Reloaded.Hooks.Definitions.dll",
+        "lib/net5.0/Reloaded.Hooks.Definitions.xml",
+        "lib/net6.0/Reloaded.Hooks.Definitions.dll",
+        "lib/net6.0/Reloaded.Hooks.Definitions.xml",
+        "lib/netcoreapp3.0/Reloaded.Hooks.Definitions.dll",
+        "lib/netcoreapp3.0/Reloaded.Hooks.Definitions.xml",
+        "lib/netstandard2.0/Reloaded.Hooks.Definitions.dll",
+        "lib/netstandard2.0/Reloaded.Hooks.Definitions.xml",
+        "reloaded.hooks.definitions.1.11.0.nupkg.sha512",
+        "reloaded.hooks.definitions.nuspec"
+      ]
+    },
+    "Reloaded.Memory/9.3.2": {
+      "sha512": "WF4AAzzvLqYzIhoWsILfB10A+blkQZ9VyQ/OYYxsUsYxxUj7lzYbcLpMQQ1ONnCdWHlIbFWO4Cq1DmKvWdP23g==",
+      "type": "package",
+      "path": "reloaded.memory/9.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "Reloaded-Icon.png",
+        "lib/net48/Reloaded.Memory.dll",
+        "lib/net48/Reloaded.Memory.xml",
+        "lib/net5.0/Reloaded.Memory.dll",
+        "lib/net5.0/Reloaded.Memory.xml",
+        "lib/net6.0/Reloaded.Memory.dll",
+        "lib/net6.0/Reloaded.Memory.xml",
+        "lib/net7.0/Reloaded.Memory.dll",
+        "lib/net7.0/Reloaded.Memory.xml",
+        "lib/net8.0/Reloaded.Memory.dll",
+        "lib/net8.0/Reloaded.Memory.xml",
+        "lib/netcoreapp3.1/Reloaded.Memory.dll",
+        "lib/netcoreapp3.1/Reloaded.Memory.xml",
+        "lib/netstandard2.0/Reloaded.Memory.dll",
+        "lib/netstandard2.0/Reloaded.Memory.xml",
+        "lib/netstandard2.1/Reloaded.Memory.dll",
+        "lib/netstandard2.1/Reloaded.Memory.xml",
+        "reloaded.memory.9.3.2.nupkg.sha512",
+        "reloaded.memory.nuspec"
+      ]
+    },
+    "Reloaded.Mod.Interfaces/2.4.0": {
+      "sha512": "HKQu7M0MyToKU4NK5Ula29MXSNeHz01ZzMK9BWD+xqJCITemAPdMW+w60Swln3ceGCU/ZooFSKtn4I8rcSA9AQ==",
+      "type": "package",
+      "path": "reloaded.mod.interfaces/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "NuGet-Icon.png",
+        "lib/netcoreapp3.1/Reloaded.Mod.Interfaces.dll",
+        "lib/netcoreapp3.1/Reloaded.Mod.Interfaces.xml",
+        "reloaded.mod.interfaces.2.4.0.nupkg.sha512",
+        "reloaded.mod.interfaces.nuspec"
+      ]
+    },
+    "Reloaded.SharedLib.Hooks/1.9.0": {
+      "sha512": "AEDTDhCnYxJGuLrdZCZPoiqrdl/lW4XwA6bb5dntOvkyw4RBBm/gqoNlHS7RJS7k+kt36ES+UFZAtBeyusYtgw==",
+      "type": "package",
+      "path": "reloaded.sharedlib.hooks/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.dll",
+        "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.xml",
+        "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512",
+        "reloaded.sharedlib.hooks.nuspec"
+      ]
+    },
+    "FlatOut2.SDK/1.0.0": {
+      "type": "project",
+      "path": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj",
+      "msbuildProject": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "FlatOut2.SDK >= 1.0.0",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
+      "Reloaded.Mod.Interfaces >= 2.4.0",
+      "Reloaded.SharedLib.Hooks >= 1.9.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\zackw\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj",
+      "projectName": "FlatOut2_ShaderSwapper",
+      "projectPath": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj",
+      "packagesPath": "C:\\Users\\zackw\\.nuget\\packages\\",
+      "outputPath": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\zackw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj": {
+              "projectPath": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": {
+            "target": "Package",
+            "version": "[8.0.8, )"
+          },
+          "Reloaded.Mod.Interfaces": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[2.4.0, )"
+          },
+          "Reloaded.SharedLib.Hooks": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

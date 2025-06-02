@@ -1,0 +1,28 @@
+{
+  "ModId": "FlatOut2_ShaderSwapper",
+  "ModName": "FlatOut2_ShaderSwapper",
+  "ModAuthor": "Zack Wilde",
+  "ModVersion": "1.0.0",
+  "ModDescription": "This mod recompiles shaders on the fly, so you can see what it will look like while you\u0027re writing it",
+  "ModDll": "FlatOut2_ShaderSwapper.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/FlatOut2_ShaderSwapper.dll",
+  "ModR2RManagedDll64": "x64/FlatOut2_ShaderSwapper.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "FlatOut2_ShaderSwapper.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "flatout2.exe"
+  ],
+  "ProjectUrl": ""
+}

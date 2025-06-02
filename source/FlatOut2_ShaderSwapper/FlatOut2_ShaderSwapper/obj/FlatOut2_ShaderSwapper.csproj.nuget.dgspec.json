@@ -1,0 +1,179 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj",
+        "projectName": "FlatOut2.SDK",
+        "projectPath": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj",
+        "packagesPath": "C:\\Users\\zackw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zackw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Reloaded.Hooks.Definitions": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "Reloaded.Memory": {
+              "target": "Package",
+              "version": "[9.3.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj",
+        "projectName": "FlatOut2_ShaderSwapper",
+        "projectPath": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper.csproj",
+        "packagesPath": "C:\\Users\\zackw\\.nuget\\packages\\",
+        "outputPath": "D:\\reloadedmods\\FlatOut2_ShaderSwapper\\FlatOut2_ShaderSwapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zackw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj": {
+                "projectPath": "C:\\Users\\zackw\\Documents\\GitHub\\FlatOut2.SDK\\FlatOut2.SDK\\FlatOut2.SDK.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Reloaded.Mod.Interfaces": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Reloaded.SharedLib.Hooks": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

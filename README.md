@@ -1,6 +1,8 @@
 # FlatOut 2 Shader Swapper
 This mod recompiles shaders on the fly when they change, giving you a live preview in-game
 
+https://github.com/user-attachments/assets/bcaa9326-898e-4a5b-9a1d-cf36ca680225
+
 <br>
 
 # Building

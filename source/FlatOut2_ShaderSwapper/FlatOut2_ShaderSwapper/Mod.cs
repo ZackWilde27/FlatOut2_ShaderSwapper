@@ -2,7 +2,6 @@
 using FlatOut2.SDK.API;
 using FlatOut2_ShaderSwapper.Template;
 using Microsoft.VisualBasic;
-//using Reloaded.Hooks.Definitions;
 using Reloaded.Hooks.Definitions.X86;
 using static Reloaded.Hooks.Definitions.X86.FunctionAttribute;
 using Reloaded.Hooks.ReloadedII.Interfaces;
@@ -82,26 +81,25 @@ namespace FlatOut2_ShaderSwapper
         }
 
         [DllImport("dxStuff.dll", CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Ansi)]
-        private static unsafe extern void RecompileShader(void* shaderPtr, char* shader, uint shaderLen);
+        private static unsafe extern void RecompileShader(Shader* shaderPtr, string shader, uint shaderLen);
 
         private unsafe struct FO2Shader(Shader* shader, string filename)
         {
             public Shader* Shader = shader;
             public string Filename = filename;
-            public DateTime LastModified;
+            public DateTime LastModified = new(0);
         }
 
         private static readonly FO2Shader[] Shaders = new FO2Shader[50];
         private static int ShaderCount;
 
         [Function([Register.eax, Register.esi], Register.eax, StackCleanup.Callee)]
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.StdCall, CharSet = CharSet.Ansi)]
         private unsafe delegate void* Shader_ShaderPtr(void* effect_EAX, Shader* shader_ESI, string filename, int param_2);
-
 
         private static Reloaded.Hooks.Definitions.IHook<Shader_ShaderPtr> ShaderShaderHook;
 
-        private unsafe void* NewShader_Shader(void* effect_EAX, Shader* shader_ESI, string filename, int param_2)
+        private static unsafe void* NewShader_Shader(void* effect_EAX, Shader* shader_ESI, string filename, int param_2)
         {
             if (File.Exists(filename))
                 Shaders[ShaderCount++] = new(shader_ESI, filename);
@@ -136,13 +134,11 @@ namespace FlatOut2_ShaderSwapper
                         return;
                     }
 
-                    RecompileShader(Shaders[i].Shader, (char*)Marshal.StringToHGlobalAnsi(shaderText), (uint)shaderText.Length);
+                    RecompileShader(Shaders[i].Shader, shaderText, (uint)shaderText.Length);
                     Shaders[i].LastModified = dateModified;
                 }
             }
         }
-
-
 
         public unsafe Mod(ModContext context)
         {

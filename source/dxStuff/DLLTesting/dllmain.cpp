@@ -31,13 +31,11 @@ typedef void (*TaskModalMessageBoxPtr)(LPCSTR lpText);
 // but that's not enough because it also needs to be in an extern "C" block
 extern "C" 
 {
-    __declspec(dllexport) extern void __stdcall RecompileShader(void* shaderPtr, char* shader, UINT shaderLen)
+    __declspec(dllexport) extern void __stdcall RecompileShader(Shader* pShader, char* assembly, UINT assemblyLen)
     {
-        Shader* pShader = (Shader*)shaderPtr;
-
         LPD3DXEFFECT newEffect;
         LPD3DXBUFFER compilationErrors;
-        HRESULT hr = D3DXCreateEffect(GetDevice(), shader, shaderLen, NULL, NULL, D3DXSHADER_USE_LEGACY_D3DX9_31_DLL, NULL, &newEffect, &compilationErrors);
+        HRESULT hr = D3DXCreateEffect(GetDevice(), assembly, assemblyLen, NULL, NULL, D3DXSHADER_USE_LEGACY_D3DX9_31_DLL, NULL, &newEffect, &compilationErrors);
 
         if (compilationErrors)
             TMMessage((char*)compilationErrors->GetBufferPointer());
@@ -53,6 +51,7 @@ extern "C"
 
             pShader->pEffect_0x54->Release();
             pShader->pEffect_0x54 = newEffect;
+
             pShader->hTex0_0x68 = newEffect->GetParameterByName(NULL, "Tex0");
             pShader->hTex1_0x6c = newEffect->GetParameterByName(NULL, "Tex1");
             pShader->hTex2_0x70 = newEffect->GetParameterByName(NULL, "Tex2");
@@ -60,6 +59,7 @@ extern "C"
             pShader->mCub_0x78 = newEffect->GetParameterByName(NULL, "mCub");
             pShader->dFac_0x7c = newEffect->GetParameterByName(NULL, "dFac");
             pShader->vDiff_0x80 = newEffect->GetParameterByName(NULL, "vDiff");
+
             newEffect->SetTexture(pShader->hTex0_0x68, tex0);
             newEffect->SetTexture(pShader->hTex1_0x6c, tex1);
             newEffect->SetTexture(pShader->hTex2_0x70, tex2);
@@ -73,7 +73,6 @@ BOOL APIENTRY DllMain( HMODULE hModule,
                        LPVOID lpReserved
                      )
 {
-    HANDLE hFile;
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
